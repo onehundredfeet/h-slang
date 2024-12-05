@@ -1,0 +1,59 @@
+
+
+
+[Internal="gfx::IShaderProgram", NoDelete]
+interface ShaderProgram {
+
+};
+
+[Internal="gfx::IModule", NoDelete]
+interface Module {
+
+};
+
+[Internal="gfx::IDevice", NoDelete]
+interface Device {
+  Module loadModule(String moduleName); //, IBlob** outDiagnostics = nullptr
+};
+
+[Internal="gfx::IShaderProgram", NoDelete]
+interface ShaderProgram {
+
+};
+
+[Internal="slang::ISession", NoDelete]
+interface Session {
+
+};
+
+[Internal="ComPtr<slang::ISession>", NoDelete]
+interface SessionPtr {
+
+};
+
+
+[Internal="slang::IBlob", NoDelete]
+interface Blob {
+     // writeRef
+};
+
+[Internal="ComPtr<slang::IBlob>", NoDelete]
+interface BlobPtr {
+
+};
+
+[Internal="platform::Window", NoDelete]
+interface Window {
+
+};
+
+[Internal="platform::WindowDesc", NoDelete]
+interface WindowDesc {
+
+};
+
+[Internal="platform::Application", NoDelete]
+interface Application {
+
+};
+
