@@ -11,6 +11,11 @@ interface Module {
 
 };
 
+[Internal="gfx::IDevice::DeviceDesc"]
+interface DeviceDesc {
+
+};
+
 [Internal="gfx::IDevice", NoDelete]
 interface Device {
   Module loadModule(String moduleName); //, IBlob** outDiagnostics = nullptr
